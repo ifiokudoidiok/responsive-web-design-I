@@ -127,7 +127,7 @@ header {
 	padding: 0px 5px 0px 0px;
 	
     margin: 0px 5px 0px 0px;
-	border: 10px solid rgba(235, 56, 56, 0.918);	
+	border: 10px solid rgba(5, 5, 5, 0);	
 	}
   }
 
@@ -366,13 +366,29 @@ header {
 
  .mid-img {
 	width: 60%;
-	display: none;
+	
 	
     padding: 10px 5px 0px 0px;
     margin: -124px 5px 25px 35px;
 	border: 10px solid rgba(0, 0, 0, 0);
 		
-} 
+}
+@media(max-width: 1024px) {
+	img.middle-img {
+		position: relative;
+		top: 97px;
+		left: -90px;
+		width: 787px;
+
+		height: 190px;
+		
+		
+		padding: 10px 5px 0px 0px;
+		margin: 224px 5px 25px 35px;
+		border: 10px solid rgba(0, 0, 0, 0);
+			
+	}
+}
 
 .features {
 	display: flex;
@@ -407,7 +423,7 @@ header {
 		position: relative;
 
 		bottom: -363px;
-		left: -270px;
+		left: -30px;
 	} 
 	
 	 .about {
@@ -418,7 +434,7 @@ header {
 		border: 10px solid rgba(0, 0, 0, 0);
 		width: 380px;
 		top: 207px; 
-		left: 141px;
+		left: 380px;
 		 position: relative;
 		
 	}
@@ -453,6 +469,40 @@ header {
 	top: -320px; 
 	left: 632px;
 	 position: relative;
+}
+@media(max-width: 1024px) {
+	.services {
+		position:relative;
+		top:52px;
+		left: -28px;
+		padding: -10px 50px 250px 500px;
+		margin: -8px 5px 25px 35px; 
+		border: 10px solid rgba(0, 0, 0, 0);
+		width: 240px;
+		
+	} 
+	
+	 .product {
+	
+		padding: -10px 50px 25px 500px;
+		
+		border: 10px solid rgba(0, 0, 0, 0);
+		width: 240px;
+		top: -137px; 
+		left: 258px;
+		 position: relative;
+	} 
+	
+	 .vision {
+		
+		padding: -10px 50px 25px 500px;
+		
+		border: 10px solid rgba(0, 0, 0, 0);
+		width: 240px;
+		top: -300px; 
+		left: 512px;
+		 position: relative;
+	}	
 } 
 
 .divider-bottom {
@@ -465,6 +515,19 @@ header {
 	padding: 10px 0px 10px 0px; */
 	width: 93%;
 	/* text-align: center; */
+}
+@media(max-width: 1024px) {
+	.divider-bottom {
+		display: flex;
+		position: relative;
+		left: -4px;
+		bottom: 242px;
+		border: 1px solid grey;
+		/* margin: 50px 5px 25px 25px;
+		padding: 10px 0px 10px 0px; */
+		width: 84%;
+		/* text-align: center; */
+	}
 }
  .contact {
 	 width: 500px;
@@ -482,4 +545,23 @@ header {
     position: relative;
     top: -90px;
     right: -190px; 
-}  
+}
+@media(max-width: 1024px) {
+	.contact {
+		width: 500px;
+	   height: 50px;
+	   
+	   position: relative;
+	   top: -207px;
+	   right: 188px; 
+   } 
+   
+	footer {
+	   width: 500px;
+	   height: 50px;
+	   font-size: 15px;
+	   position: relative;
+	   top: -90px;
+	   right: -90px; 
+   }	
+}
