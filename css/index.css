@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
+	width: 100%;
 	display: flex;
 	/* justify-content: center; */
 	
@@ -80,6 +81,24 @@ h1, h2, h3, h4, h5 {
 	align-items: center;
 	
 }
+@media(max-width: 1024px) {
+	/* body {
+		background: black;
+	} */
+	.container {
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		/* flex-direction: column; */
+		border: 1px dashed brown;
+		align-items: center;
+		/* margin: 0px 5px 10px 0px;
+		padding:0px 5px 0px 20px; */
+		
+	}
+
+
+  }
 
 
 header {
@@ -95,6 +114,24 @@ header {
 	border: 10px solid rgba(0, 0, 0, 0);
 	
 }
+@media(max-width: 1024px) {
+
+	header {
+		display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	
+	align-items: left;
+	width: 100%;
+	color: grey;
+	padding: 0px 5px 0px 0px;
+	
+    margin: 0px 5px 0px 0px;
+	border: 10px solid rgba(235, 56, 56, 0.918);	
+	}
+  }
+
+
 
  nav {
 	display: flex;
@@ -109,7 +146,8 @@ header {
 	 top:13px;
 	 left:-70px; 
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: baseline;
 	/* flex-wrap: nowrap; */
 	align-items: center;
@@ -127,10 +165,85 @@ header {
 }
 
  nav a img.logo {
+	 
 	position: relative;
 	left: 38px;
 	top: 0px;
 } 
+@media(max-width: 1024px) {
+	nav {
+		display: flex;
+		flex-direction: row;
+		
+		
+		 
+	} 
+	
+	 nav a {
+		 position: relative;
+		 top:73px;
+		 left:-290px; 
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: baseline;
+		/* flex-wrap: nowrap; */
+		align-items: center;
+		margin: 0px -20px 0px 5px; 
+		width: 100%;
+	
+		  font-size: 14px;
+		padding-top: 25px;
+		padding-left: 70px;
+		padding-right: 10px;
+		text-decoration: none;
+		color: grey;
+		/* width: 100px; */
+		  
+	}
+	
+	 nav a img.logo {
+		 
+		position: relative;
+		left: 508px;
+		top: -78px;
+	} 
+
+	 nav a.anchor-services {
+		display: flex;
+		 order: 2;
+	}
+	nav a.anchor-product {
+		display: flex;
+		 order: 3;
+	}
+	nav a.anchor-vision {
+		display: flex;
+		 order: 4;
+	}
+	nav a.anchor-features {
+		display: flex;
+		 order: 5;
+	}
+	nav a.anchor-about {
+		display: flex;
+		 order: 6;
+	}
+	nav a.anchor-contact {
+		display: flex;
+		 order: 7;
+	}
+
+	nav a.anchor-img {
+		display: flex;
+		align-content: center;
+		 order: 1;
+	}
+
+	
+  }
+
+
 
  .title-txt {
 	 position: relative;
@@ -168,7 +281,46 @@ header {
 	height: 15px;
 	text-align: center;
 	color: grey;
-} 
+}
+@media (max-width: 1024px) {
+	.title-txt {
+		/* position: relative; */
+		top: 10px;
+		right: 30px;
+	   box-sizing: border-box;
+	   flex-direction: column;
+	   /* flex-wrap: nowrap; */
+	   justify-content: left;
+	   align-items: flex-start;
+	   display: flex;
+	   width: 80%;
+	   height: 100px;
+	   color: grey;
+	   padding: 10px 5px 5px 50px;
+	   margin: 50px 5px 25px 280px;
+	   border: 10px solid rgba(0, 0, 0, 0);
+	   
+	   
+	   
+	   font-size: 80px;	
+	   
+   } 
+   
+   #get-started {
+	   font-size: 18px;
+	   position: relative;
+		bottom: 65px;
+	   left: 46px; 
+	   
+	   border: 2px solid grey;
+	   margin: 50px 5px 25px 25px;
+	   padding: 5px 0px 25px 10px;
+	   width: 175px;
+	   height: 15px;
+	   text-align: center;
+	   color: grey;
+   }
+}
 
  .header-img {
 	 display: flex;
@@ -177,6 +329,15 @@ header {
 	left: 260px; 
 	
 } 
+@media(max-width: 1024px) {
+	.header-img {
+		display: none;
+	   position: relative;
+		bottom: 154px; 
+	   left: 260px; 
+	   
+   } 
+}
 
 .divider-top {
 	display: flex;
