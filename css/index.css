@@ -285,8 +285,8 @@ header {
 @media (max-width: 1024px) {
 	.title-txt {
 		/* position: relative; */
-		top: 10px;
-		right: 30px;
+		top: 40px;
+		right: 85px;
 	   box-sizing: border-box;
 	   flex-direction: column;
 	   /* flex-wrap: nowrap; */
@@ -302,20 +302,20 @@ header {
 	   
 	   
 	   
-	   font-size: 80px;	
+	   font-size: 70px;	
 	   
    } 
    
    #get-started {
 	   font-size: 18px;
 	   position: relative;
-		bottom: 65px;
-	   left: 46px; 
+		bottom: 34px;
+	   left: 26px; 
 	   
 	   border: 2px solid grey;
 	   margin: 50px 5px 25px 25px;
 	   padding: 5px 0px 25px 10px;
-	   width: 175px;
+	   width: 170px;
 	   height: 15px;
 	   text-align: center;
 	   color: grey;
@@ -350,9 +350,23 @@ header {
 	width: 67%;
 	text-align: center;
 }
+@media(max-width: 1024px) {
+	.divider-top {
+		display: flex;
+		position: relative;
+		left: -60px;
+		top: 287px;
+		border: 1px solid grey;
+		/* margin: 50px 5px 25px 25px;
+		padding: 10px 0px 10px 0px; */
+		width: 95%;
+		text-align: center;
+	}
+}
 
  .mid-img {
 	width: 60%;
+	display: none;
 	
     padding: 10px 5px 0px 0px;
     margin: -124px 5px 25px 35px;
@@ -381,6 +395,33 @@ header {
 	left: 484px;
 	 position: relative;
 	
+}
+@media(max-width: 1024px) {
+	.features {
+		display: flex;
+		flex-direction: column;
+		padding: -10px 50px 250px 500px;
+		 margin: -50px 5px 25px 35px; 
+		border: 10px solid rgba(0, 0, 0, 0);
+		width: 380px;
+		position: relative;
+
+		bottom: -363px;
+		left: -270px;
+	} 
+	
+	 .about {
+		display: flex;
+		flex-direction: column;
+		padding: -10px 50px 25px 500px;
+		
+		border: 10px solid rgba(0, 0, 0, 0);
+		width: 380px;
+		top: 207px; 
+		left: 141px;
+		 position: relative;
+		
+	}
 } 
 
  .services {
