@@ -90,8 +90,28 @@ h1, h2, h3, h4, h5 {
 		display: flex;
 		justify-content: center;
 		/* flex-direction: column; */
-		border: 1px dashed brown;
+		border: 1px dashed rgba(8, 8, 8, 0);
 		align-items: center;
+		/* margin: 0px 5px 10px 0px;
+		padding:0px 5px 0px 20px; */
+		
+	}
+
+
+  }
+  @media(max-width: 550px) {
+	/* body {
+		background: black;
+	} */
+	.container {
+		width: 540px;
+		display: flex;
+		justify-content: center;
+		/* flex-direction: column; */
+		border: 10px dashed rgba(248, 172, 172, 0);
+		align-items: center;
+		/* padding:0px 0px 0px 0px; */
+		/* margin: o auto; */
 		/* margin: 0px 5px 10px 0px;
 		padding:0px 5px 0px 20px; */
 		
@@ -127,9 +147,28 @@ header {
 	padding: 0px 5px 0px 0px;
 	
     margin: 0px 5px 0px 0px;
-	border: 10px solid rgba(5, 5, 5, 0);	
+	border: 10px solid rgba(0, 0, 0, 0);	
 	}
   }
+  @media(max-width: 550px) {
+
+	header {
+		display: flex;
+	/* flex-direction: row; */
+	/* justify-content: space-evenly; */
+	text-align: center;
+	/* align-items: center; */
+	/* width: 100%; */
+	color: grey;
+	padding: 0px 0px 0px 0px;
+	
+    margin: 0px 5px 0px 0px;
+	border: 10px solid rgba(0, 0, 0, 0);	
+	}
+  }
+  
+  
+
 
 
 
@@ -137,13 +176,13 @@ header {
 	display: flex;
 	flex-direction: row;
 	
-	
+	text-align: center;
 	 
 } 
 
  nav a {
 	 position: relative;
-	 top:13px;
+	 top:-30px;
 	 left:-70px; 
 	display: flex;
 	flex-direction: column;
@@ -153,7 +192,7 @@ header {
 	align-items: center;
 	margin: 0px -20px 0px 5px; 
 	width: 100%;
-
+	text-align: center;
   	font-size: 14px;
 	padding-top: 25px;
 	padding-left: 70px;
@@ -241,6 +280,55 @@ header {
 	}
 
 	
+  }
+  @media(max-width: 550px) {
+	nav {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		/* border-bottom: 2px solid grey; */
+		align-content: center;
+		justify-content: center;
+		
+		 
+	} 
+	
+	 nav a {
+		 position: relative;
+		 top:-18px;
+		 left:-210px; 
+		display: flex;
+		/* flex-direction: row; */
+		/* flex-wrap: wrap; */
+		/* justify-content: baseline; */
+		/* flex-wrap: nowrap; */
+		align-items: center;
+		margin: 0px 0px 0px 5px; 
+		width: 100%;
+		text-align: center;
+	
+		  font-size: 22px;
+		padding-top: 20px;
+		padding-bottom: 18px;
+		padding-left: 0px;
+		padding-right: 0px;
+		border-bottom: 2px solid grey;
+		text-decoration: none;
+		color: grey;
+		/* width: 100px; */
+		  
+	}
+	
+	 nav a img.logo {
+		 
+		position: relative;
+		left: 1px;
+		top: -2px;
+		/* border-bottom: 2px solid grey; */
+	} 
+
+
+	 
   }
 
 
